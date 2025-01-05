@@ -52,7 +52,7 @@ Three versions of DockerChatbot have been implemented with incremental improveme
 | **Text Embedding/Search** | None                                  | None                         | FAISS for vector search           |
 | **Response Generation**   | Direct from scraped content           | Direct from scraped content  | Embedding-based similarity search |
 | **Query Execution Time**  | Moderate (7-17 sec)                   | Moderate (7-24 sec)          | Faster (7-11 sec)                 |
-| **Accuracy of Responses** | High (relies on official docs)        | High                         | High (more contextual with FAISS) |
+| **Accuracy of Responses** | High                                  | High                         | High (more contextual with FAISS) |
 
 ## Example Outputs and Comparison
 
