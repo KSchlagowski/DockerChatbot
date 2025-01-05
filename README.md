@@ -34,8 +34,8 @@ pip install -r requirements.txt
 
 ## How it Works
 
-1. **Web Scraping**: The chatbot uses BeautifulSoup to scrape content from Docker's official documentation.
-2. **Keyword Extraction**: Spacy is used to extract key terms from user queries.
+1. **Web Scraping**: The chatbot uses BeautifulSoup to scrape content from Docker's official documentation. The GPT model autonomously identifies which documentation page to scrape based on the user's query.
+2. **Keyword Extraction**: SpaCy is used to extract key terms from user queries.
 3. **Text Embedding and Search**: LangChain and FAISS are used in later versions to enhance document search and response relevance.
 4. **API Interaction**: The bot queries OpenAI models (GPT-4o-mini) to process and format answers.
 
@@ -48,7 +48,7 @@ Three versions of DockerChatbot have been implemented with incremental improveme
 | Feature                   | Version 1                             | Version 2                    | Version 3                         |
 | ------------------------- | ------------------------------------- | ---------------------------- | --------------------------------- |
 | **Web Scraping**          | Basic scraping of documentation pages | Same as Ver1                 | Same as Ver1                      |
-| **Keyword Extraction**    | None                                  | Spacy for keyword extraction | Spacy for keyword extraction      |
+| **Keyword Extraction**    | None                                  | SpaCy for keyword extraction | SpaCy for keyword extraction      |
 | **Text Embedding/Search** | None                                  | None                         | FAISS for vector search           |
 | **Response Generation**   | Direct from scraped content           | Direct from scraped content  | Embedding-based similarity search |
 | **Query Execution Time**  | Moderate (7-17 sec)                   | Moderate (7-24 sec)          | Faster (7-11 sec)                 |
