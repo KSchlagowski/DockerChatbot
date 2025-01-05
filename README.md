@@ -2,7 +2,7 @@
 
 ## Overview
 
-DockerChatbot is a Python-based assistant designed to provide answers to Docker-related queries by scraping official Docker documentation. This tool can respond to common questions about Docker installation, container management, cloud setup, and Docker Compose usage.
+DockerChatbot is a Python-based assistant designed to provide answers to Docker-related queries by scraping official Docker documentation. This tool can respond to common questions about Docker like installation, container management, cloud setup, and Docker Compose usage.
 
 ## Features
 - **SpaCy**: Used for keyword extraction and natural language processing.
